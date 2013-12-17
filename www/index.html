@@ -6,7 +6,9 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+		
         <title>Ekoloska trgovina</title>
+		
 		<script src="js/jquery.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			document.addEventListener("deviceready", onDeviceReady, false);
@@ -18,6 +20,13 @@
 			$(document).ready(function() {
 				$('.loading').show();
 				$("#page").load("http://bplanet.si/web/superhealthy/test.php", function() {
+					$('.loading').hide();
+				});
+			});
+			
+			$(document).ready(function() {
+				$('.loading').show();
+				$("#priporocamo_baza").load("http://bplanet.si/web/ekoloska/test.php", function() {
 					$('.loading').hide();
 				});
 			});
@@ -66,6 +75,26 @@
 		<div id="content">
 			<div id="slider">
 				<img src="img/slider.png" alt="vulkanski prah" width="100%"/>
+			</div>
+			
+			<div style="padding-top: 50px"> </div>
+			
+			<div id="priporocamo" style=" background-color: #ffffff;padding-bottom: 40px;">
+				<table width="100%">
+						<tr width="100%">
+							<td width="75%">
+									<div class="font_footer" style="font-size: 300%; padding-left: 20px;"> PRIPOROČAMO </div>
+							</td>
+							<td style="float: right">
+									<img style="padding-top: 10px; padding-right: 20px;" src="img/list.png" alt="list" />
+							</td>
+						</tr>
+					</table>
+				<div style="padding-top: 120px"> </div>
+				
+				<div id="priporocamo_baza"></div>
+				<div class="loading"></div>
+				
 			</div>
 			
 			<a href="#">	
@@ -124,7 +153,7 @@
 			</div>
 		</div> 
 		
-		<div style="padding-bottom: 100px"> </div>
+		<div style="padding-top: 50px"> </div>
 		
 		<div id="footer">
 			<div id="footer_box">

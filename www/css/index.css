@@ -68,7 +68,7 @@ body {
 
 #priporocamo{
 	width: 100%;
-	background: url('../img/priporocamo.png') no-repeat;
+	background: url('../img/oranzna.png') no-repeat;
 }
 
 #najbolj_prodajano{
@@ -94,6 +94,18 @@ body {
 	font-size: 32px;
 	color: #ffffff;
 }
+
+.loading {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .1) url('../img/loading.gif') 50% 50% no-repeat;
+}
+
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
