@@ -52,11 +52,11 @@ body {
 
 #footer{
 	width: 100%;
-	height: 215px;
+	height: auto;
+	max-height: 253px;
 	background-image: url('../img/footer.png');
 	bottom: 0;
 	left: 0;
-	
 }
 
 #footer_box{
@@ -66,32 +66,33 @@ body {
 
 
 
-#priporocamo{
+#orange{
 	width: 100%;
 	background: url('../img/oranzna.png') no-repeat;
 }
 
-#najbolj_prodajano{
+#blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
 	height:93px;
 }
 
-#certifikati{
+#green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
 	height:93px;
 	}
 
-#postani_clan{
+#gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
 	height:93px;
 }
 
+
 .font_footer{
 	font-family: 'Oswald', sans-serif;
-	font-size: 229%;
+	font-size: 220%;
 	color: #ffffff;
 }
 
