@@ -105,6 +105,18 @@ body {
     width: 100%;
     background: rgba(0, 0, 0, .1) url('../img/loading.gif') 50% 50% no-repeat;
 }
+.font1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	color: #505050;
+} /* naslov ter teza izdelka */
+
+.font_cena{
+	font-family: 'Oswald', sans-serif;
+	font-size: 70px;
+	color: #C7D33F;
+}
+
 
 
 /* Landscape layout (with min-width) */
