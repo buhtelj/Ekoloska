@@ -154,6 +154,22 @@ body {
 	color: #000000;
 }
 
+.prijavitese {
+	width: 252px;
+	height: 47px;
+	background-image: url("../images/PRIJAVA.png");
+	color: transparent;
+	border: 0px;
+}
+
+.pozabljenaclanska {
+	width: 252px;
+	height: 47px;
+	background-image: url("../images/poslji.png");
+	color: transparent;
+	border: 0px;
+}
+
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
