@@ -105,6 +105,7 @@ body {
     width: 100%;
     background: rgba(0, 0, 0, .1) url('../img/loading.gif') 50% 50% no-repeat;
 }
+
 .font1{
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
@@ -117,6 +118,41 @@ body {
 	color: #C7D33F;
 }
 
+.font2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 70px;
+	color: #C36C3A;
+}
+
+.font3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
+	color: #505050;
+}
+
+.font4{
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	color: #000000;
+}
+
+.font5{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color: #000000;
+}
+.error{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	color: red;
+}
+
+
+.font_opis{
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	color: #000000;
+}
 
 
 /* Landscape layout (with min-width) */
