@@ -20,10 +20,12 @@
 						
 			$(document).ready(function() {
 				$('.loading').show();
-				$("#priporocamo_baza").load("http://bplanet.si/web/superhealthy/test.php", function() {
+				$("#page").load("http://bplanet.si/web/superhealthy/test.php", function() {
 					$('.loading').hide();
 				});
 			});
+
+
 			
 			function odpriNavigacijo() {
 				document.getElementById('navigacija').style.display = "block";
@@ -92,9 +94,9 @@
 					</table>
 				<div style="padding-top: 30px"> </div>
 				
-				<div id="priporocamo_baza"></div>
-				<div class="loading">
-				</div>
+				<div id="page" style="background-color: #ffffff"></div>
+				<div class="loading"></div>
+
 				
 			</div>
 			
