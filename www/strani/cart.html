@@ -20,7 +20,7 @@
 			
 			$(document).ready(function() {
 				$('.loading').show();
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/kategorije.php", function() {
+				$("#stran").load("http://bplanet.si/web/ekoloska/strani/cart.php", function() {
 					$('.loading').hide();
 				});
 			});
@@ -73,7 +73,7 @@
 			</table>
 		</div>
 		
-		<div id="kategorije"></div>
+		<div id="stran"></div>
 		<div class="loading"></div>
 		
 		<div style="padding-top: 50px"> </div>
