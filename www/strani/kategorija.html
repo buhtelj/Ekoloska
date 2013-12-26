@@ -25,7 +25,7 @@
 				});
 			});
 			
-			$('.gray').click(function(){
+			$( "gray" ).one( "click", function(){
 				$.post('http://bplanet.si/web/ekoloska/strani/izbira.php', {'ime_kat' : $('.gray').html()};
 				return false;)
 			});
