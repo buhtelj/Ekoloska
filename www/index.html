@@ -20,10 +20,16 @@
 						
 			$(document).ready(function() {
 				$('.loading').show();
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/kategorije.php", function() {
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/test.php", function() {
 					$('.loading').hide();
 				});
 			});
+
+
+			
+			function odpriNavigacijo() {
+				document.getElementById('navigacija').style.display = "block";
+			}
 			
 			function zapriNavigacijo() {
 				document.getElementById('navigacija').style.display = "none";
