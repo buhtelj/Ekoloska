@@ -20,11 +20,9 @@
 			
 			$(document).ready(function() {
 				$('.loading').show();
-				zamenjajStran(id) { 
-					$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id }function() {
-                                        $('.loading').hide();
-                                });
-}
+				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/kategorije.php", function() {
+					$('.loading').hide();
+				});
 			});
 			
 			function odpriNavigacijo() {
