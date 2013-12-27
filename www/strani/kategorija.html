@@ -34,7 +34,7 @@
 			}
 			
 			function zamenjajStran(id_kat, id_pod, id_izdelka) { 
-			  $("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id_kat, id_podkategorije: id_pod, id_izdelka }, function() { 
+			  $("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id_kat, id_podkategorije: id_pod, id_izdelka: id_izdelka }, function() { 
 													$('.loading').hide();
 											});
 			}
