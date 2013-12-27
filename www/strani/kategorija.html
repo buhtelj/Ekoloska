@@ -33,6 +33,13 @@
 				document.getElementById('navigacija').style.display = "none";
 			}
 		</script>
+		<script>
+			function zamenjajStran(id) { 
+				  $("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id }function() {
+					$('.loading').hide();
+					});
+				}
+		</script>
     </head>
     <body>
 	
