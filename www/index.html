@@ -39,13 +39,13 @@
 											});
 			}
 			function izdelki(id_pod){
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izbira.php", {id_podkategorije: id_pod}, function() { 
+				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izdelki.php", {id_podkategorije: id_pod}, function() { 
 					$('.loading').hide();
 				});
 			}
 			
 			function izdelek(id_izd){
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izbira.php", {id_izdelka: id_izd}, function() { 
+				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izdelek.php", {id_izdelka: id_izd}, function() { 
 					$('.loading').hide();
 				});
 			}
