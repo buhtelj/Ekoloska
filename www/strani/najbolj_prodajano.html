@@ -33,6 +33,12 @@
 			function zapriNavigacijo() {
 				document.getElementById('navigacija').style.display = "none";
 			}
+			
+			function vKosarico(id){
+				$("#kontakt").load("http://bplanet.si/web/ekoloska/strani/cart.php", {id_izdelka: id}, function() { 
+					$('.loading').hide();
+				});
+			}
 		</script>
     </head>
     <body>

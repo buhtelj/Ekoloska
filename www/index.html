@@ -49,6 +49,12 @@
 					$('.loading').hide();
 				});
 			}
+			
+			function vKosarico(id){
+				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/cart.php", {id_izdelka: id}, function() { 
+					$('.loading').hide();
+				});
+			}
 		</script>
     </head>
     <body>
