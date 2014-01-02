@@ -34,8 +34,14 @@
 				document.getElementById('navigacija').style.display = "none";
 			}
 			
+			function izdelek(id_izd){
+				$("#kontakt").load("http://bplanet.si/web/ekoloska/strani/izdelek.php", {id_izdelka: id_izd}, function() { 
+					$('.loading').hide();
+				});
+			}
+			
 			function vKosarico(id){
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/cart/add.php", {id_izdelka: id}, function() { 
+				$("#kontakt").load("http://bplanet.si/web/ekoloska/strani/cart/add.php", {id_izdelka: id}, function() { 
 					$('.loading').hide();
 				});
 			}

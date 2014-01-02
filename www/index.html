@@ -51,8 +51,9 @@
 			}
 			
 			function vKosarico(id){
-				$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/add.php", {id_izdelka: id}, function() { 
+				$("#izdelek").load("http://bplanet.si/web/ekoloska/strani/cart/add.php", {id_izdelka: id}, function() { 
 					$('.loading').hide();
+					$('#content').hide();
 				});
 			}
 		</script>
@@ -176,6 +177,9 @@
 				</table>
 			</div>
 		</div> 
+		
+		<div id="izdelek"></div>
+		<div class="loading"></div>
 		
 		<div style="padding-top: 50px"> </div>
 		
