@@ -12,6 +12,20 @@
 		
 		<script src="../js/jquery.js"></script>
 		<script src="../js/funkcije.js"></script>
+		<script>
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			function onDeviceReady() {
+				alert("ready");
+			}
+						
+			$(document).ready(function() {
+				$('.loading').show();
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/splosni-pogoji.php", function() {
+					$('.loading').hide();
+				});
+			});
+		</script>
     </head>
     <body>
 	
@@ -53,7 +67,7 @@
 		</div>
 		
 		<div id="content">
-			<div id="strani"></div>
+			<div id="page"></div>
 			<div class="loading"></div>
 		</div>
 		

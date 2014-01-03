@@ -12,6 +12,20 @@
 		
 		<script src="js/jquery.js"></script>
 		<script src="js/funkcije.js"></script>
+		<script>
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			function onDeviceReady() {
+				alert("ready");
+			}
+						
+			$(document).ready(function() {
+				$('.loading').show();
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/test.php", function() {
+					$('.loading').hide();
+				});
+			});
+		</script>
     </head>
     <body>
 	
