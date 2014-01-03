@@ -21,6 +21,7 @@
 	function izdelek(id_izd){
 		$("#izdelek").load("http://bplanet.si/web/ekoloska/strani/izdelek.php", {id_izdelka: id_izd}, function() { 
 			$('.loading').hide();
+			$('#content').hide();
 		});
 	}
 	
