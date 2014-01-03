@@ -11,33 +11,20 @@
         <title>Ekoloska trgovina</title>
 		
 		<script src="../js/jquery.js"></script>
-		<script type="text/javascript" charset="utf-8">
+		<script src="../js/funkcije.js"></script>
+		<script>
 			document.addEventListener("deviceready", onDeviceReady, false);
 
 			function onDeviceReady() {
 				alert("ready");
 			}
-			
+						
 			$(document).ready(function() {
 				$('.loading').show();
-				$("#stran").load("http://bplanet.si/web/ekoloska/strani/cart/cart.php", function() {
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/cart.php", function() {
 					$('.loading').hide();
 				});
 			});
-			
-			function odpriNavigacijo() {
-				document.getElementById('navigacija').style.display = "block";
-			}
-			
-			function zapriNavigacijo() {
-				document.getElementById('navigacija').style.display = "none";
-			}
-			
-			function vKosarico(id){
-				$("#stran").load("http://bplanet.si/web/ekoloska/strani/cart.php", {id_izdelka: id}, function() { 
-					$('.loading').hide();
-				});
-			}
 		</script>
     </head>
     <body>
@@ -80,7 +67,7 @@
 		</div>
 		
 		<div id="content">
-			<div id="stran"></div>
+			<div id="page"></div>
 			<div class="loading"></div>
 		</div>
 		

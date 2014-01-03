@@ -11,27 +11,20 @@
         <title>Ekoloska trgovina</title>
 		
 		<script src="../js/jquery.js"></script>
-		<script type="text/javascript" charset="utf-8">
+		<script src="../js/funkcije.js"></script>
+		<script>
 			document.addEventListener("deviceready", onDeviceReady, false);
 
 			function onDeviceReady() {
 				alert("ready");
 			}
-			
+						
 			$(document).ready(function() {
 				$('.loading').show();
-				$("#strani").load("http://bplanet.si/web/ekoloska/strani/certifikati.php", function() {
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/certifikati.php", function() {
 					$('.loading').hide();
 				});
 			});
-			
-			function odpriNavigacijo() {
-				document.getElementById('navigacija').style.display = "block";
-			}
-			
-			function zapriNavigacijo() {
-				document.getElementById('navigacija').style.display = "none";
-			}
 		</script>
     </head>
     <body>
@@ -73,9 +66,10 @@
 			</table>
 		</div>
 		
-		<div id="strani"></div>
-		<div class="loading"></div>
-		
+		<div id="content">
+			<div id="page"></div>
+			<div class="loading"></div>
+		</div>
 		<div style="padding-top: 50px"> </div>
 		
 		<div id="footer">

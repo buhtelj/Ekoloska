@@ -11,51 +11,20 @@
         <title>Ekoloska trgovina</title>
 		
 		<script src="../js/jquery.js"></script>
-		<script type="text/javascript" charset="utf-8">
+		<script src="../js/funkcije.js"></script>
+		<script>
 			document.addEventListener("deviceready", onDeviceReady, false);
 
 			function onDeviceReady() {
 				alert("ready");
 			}
-			
+						
 			$(document).ready(function() {
 				$('.loading').show();
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/kategorije.php", function() {
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/kategorije.php", function() {
 					$('.loading').hide();
 				});
 			});
-			
-			function odpriNavigacijo() {
-				document.getElementById('navigacija').style.display = "block";
-			}
-			
-			function zapriNavigacijo() {
-				document.getElementById('navigacija').style.display = "none";
-			}
-			
-			function zamenjajStran(id) { 
-			  $("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id}, function() { 
-													$('.loading').hide();
-											});
-			}
-			
-			function izdelki(id_pod){
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izdelki.php", {id_podkategorije: id_pod}, function() { 
-					$('.loading').hide();
-				});
-			}
-			
-			function izdelek(id_izd){
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/izdelek.php", {id_izdelka: id_izd}, function() { 
-					$('.loading').hide();
-				});
-			}
-			
-			function vKosarico(id){
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/cart/cart.php", {id_izdelka: id}, function() { 
-					$('.loading').hide();
-				});
-			}
 		</script>
     </head>
     <body>
@@ -96,6 +65,7 @@
 				</tr>
 			</table>
 		</div>
+		
 		<div id="content">
 			<div id="kategorije"></div>
 			<div class="loading"></div>

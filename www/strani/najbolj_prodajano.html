@@ -11,41 +11,7 @@
         <title>Ekoloska trgovina</title>
 		
 		<script src="../js/jquery.js"></script>
-		<script type="text/javascript" charset="utf-8">
-			document.addEventListener("deviceready", onDeviceReady, false);
-
-			function onDeviceReady() {
-				alert("ready");
-			}
-			
-			$(document).ready(function() {
-				$('.loading').show();
-				$("#kontakt").load("http://bplanet.si/web/ekoloska/strani/najbolj-prodajano.php", function() {
-					$('.loading').hide();
-				});
-			});
-			
-			
-			function odpriNavigacijo() {
-				document.getElementById('navigacija').style.display = "block";
-			}
-			
-			function zapriNavigacijo() {
-				document.getElementById('navigacija').style.display = "none";
-			}
-			
-			function izdelek(id_izd){
-				$("#kontakt").load("http://bplanet.si/web/ekoloska/strani/izdelek.php", {id_izdelka: id_izd}, function() { 
-					$('.loading').hide();
-				});
-			}
-			
-			function vKosarico(id){
-				$("#kontakt").load("http://bplanet.si/web/ekoloska/strani/cart/add.php", {id_izdelka: id}, function() { 
-					$('.loading').hide();
-				});
-			}
-		</script>
+		<script src="../js/funkcije.js"></script>
     </head>
     <body>
 	

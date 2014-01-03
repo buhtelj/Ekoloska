@@ -11,29 +11,7 @@
         <title>Ekoloska trgovina</title>
 		
 		<script src="../js/jquery.js"></script>
-		<script type="text/javascript" charset="utf-8">
-			document.addEventListener("deviceready", onDeviceReady, false);
-
-			function onDeviceReady() {
-				alert("ready");
-			}
-			
-			$(document).ready(function() {
-				$('.loading').show();
-				$("#vpis").load("http://bplanet.si/web/ekoloska/strani/vpis.php", function() {
-					$('.loading').hide();
-				});
-			});
-			
-			
-			function odpriNavigacijo() {
-				document.getElementById('navigacija').style.display = "block";
-			}
-			
-			function zapriNavigacijo() {
-				document.getElementById('navigacija').style.display = "none";
-			}
-		</script>
+		<script src="../js/funkcije.js"></script>
     </head>
     <body>
 	

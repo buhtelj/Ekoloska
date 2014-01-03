@@ -11,28 +11,7 @@
         <title>Ekoloska trgovina</title>
 		
 		<script src="../js/jquery.js"></script>
-		<script type="text/javascript" charset="utf-8">
-			document.addEventListener("deviceready", onDeviceReady, false);
-
-			function onDeviceReady() {
-				alert("ready");
-			}
-			
-			$(document).ready(function() {
-				$('.loading').show();
-				$("#kategorije").load("http://bplanet.si/web/ekoloska/strani/kategorije.php", function() {
-					$('.loading').hide();
-				});
-			});
-			
-			function odpriNavigacijo() {
-				document.getElementById('navigacija').style.display = "block";
-			}
-			
-			function zapriNavigacijo() {
-				document.getElementById('navigacija').style.display = "none";
-			}
-		</script>
+		<script src="../js/funkcije.js"></script>
     </head>
     <body>
 	
@@ -73,8 +52,10 @@
 			</table>
 		</div>
 		
-		<div id="kategorije"></div>
-		<div class="loading"></div>
+		<div id="content">
+			<div id="kategorije"></div>
+			<div class="loading"></div>
+		</div>
 		
 		<div style="padding-top: 50px"> </div>
 		
