@@ -33,13 +33,6 @@
 		});
 	}
 	
-	function vKosarico2(id){
-		$("#izdelek").load("http://bplanet.si/web/ekoloska/strani/cart/add2.php", {id_izdelka: id}, function() { 
-			$('.loading').hide();
-			$('#content').hide();
-		});
-	}
-	
 	function odstrani(id){
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/remove.php", {id_izdelka: id}, function() { 
 			$('.loading').hide();
