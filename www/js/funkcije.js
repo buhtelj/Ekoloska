@@ -90,7 +90,7 @@
 	}
 	
 	function kupi(i, u, t, e, np){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", {ime: ime, ulica: u, tel: t, email: e, nacin: np}, function() { 
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: ime, ulica: u, tel: t, email: e, nacin: np}, function() { 
 			$('.loading').hide();
 		});
 	}
