@@ -64,3 +64,33 @@
 			$('.loading').hide();
 		});
 	}
+	
+	function popust(k){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/cart.php", {popustKoda: k}, function() { 
+			$('.loading').hide();
+		});
+	}
+	
+	function prijava(st){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpis.php", {clanska: st}, function() { 
+			$('.loading').hide();
+		});
+	}
+	
+	function pozabljeno(mail){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpis.php", {email: mail}, function() { 
+			$('.loading').hide();
+		});
+	}
+	
+	function podatki(st){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", {podatki: st}, function() { 
+			$('.loading').hide();
+		});
+	}
+	
+	function kupi(i, u, t, e, np){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", {ime: ime, ulica: u, tel: t, email: e, nacin: np}, function() { 
+			$('.loading').hide();
+		});
+	}
