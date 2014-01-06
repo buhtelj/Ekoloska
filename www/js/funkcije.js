@@ -100,7 +100,7 @@
 		var t = $("#tel").val();
 		var e = $("#email").val();
 		var np = $("#nacinplacila").val();
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: ime, ulica: u, posta: p, tel: t, email: e, nacin: np}, function() { 
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: i, ulica: u, posta: p, tel: t, email: e, nacin: np}, function() { 
 			$('.loading').hide();
 		});
 	}
