@@ -84,13 +84,19 @@
 		});
 	}
 	
-	function podatki(st){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", {podatki: st}, function() { 
+	function podatki(){
+		var st = $("#clanska").val();
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", {clanska: st}, function() { 
 			$('.loading').hide();
 		});
 	}
 	
-	function kupi(i, u, t, e, np){
+	function kupi(){
+		var i = $("#ime").val();
+		var u = $("#ulica").val();
+		var t = $("#tel").val();
+		var e = $("#email").val();
+		var np = $("#nacinplacila").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: ime, ulica: u, tel: t, email: e, nacin: np}, function() { 
 			$('.loading').hide();
 		});
