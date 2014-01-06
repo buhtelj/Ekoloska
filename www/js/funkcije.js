@@ -112,3 +112,10 @@
 			$('.loading').hide();
 		});
 	}
+	
+	function idStrani(url){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/id.php", {naslov: url}, function() { 
+			$('.loading').hide();
+		});
+	}
+	
