@@ -60,9 +60,10 @@
 	}
 		
 	function naBlagajno(){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", function() { 
-			$('.loading').hide();
-		});
+		alert('yay');
+		//$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", function() { 
+		//	$('.loading').hide();
+		//});
 	}
 	
 	function popust(){
