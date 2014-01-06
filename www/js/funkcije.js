@@ -107,8 +107,10 @@
 	}
 	
 	function iskanje(){
+		alert('jej');
+		/*
 		var st = $("#iskanje").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/artiklov.php", {artikli: st}, function() { 
 			$('.loading').hide();
-		});
+		});*/
 	}
