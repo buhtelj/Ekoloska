@@ -76,7 +76,7 @@
 		var st = $("#clanska").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpisovanje.php", {koda: st}, function() { 
 			$('.loading').hide();
-			<%Session["clanska"] = st;%
+			Session["clanska"] = st;
 		});
 	}
 	
@@ -104,4 +104,8 @@
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: i, ulica: u, posta: p, tel: t, email: e, nacin: np}, function() { 
 			$('.loading').hide();
 		});
+	}
+	
+	function iskanje() {
+		alert("test");
 	}
