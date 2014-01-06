@@ -65,7 +65,8 @@
 		});
 	}
 	
-	function popust(k){
+	function popust(){
+		var k = $("#koda_pp").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/cart.php", {popustKoda: k}, function() { 
 			$('.loading').hide();
 		});
