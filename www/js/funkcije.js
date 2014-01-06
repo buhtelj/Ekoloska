@@ -106,7 +106,7 @@
 		});
 	}
 	
-	function iskanje(){
+	function iskanje() {
 		alert('jej');
 		/*
 		var st = $("#iskanje").val();
