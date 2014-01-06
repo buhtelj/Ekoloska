@@ -94,13 +94,14 @@
 	}
 	
 	function kupi(){
-		var i = $("#ime").val();
-		var u = $("#ulica").val();
-		var p = $("#posta").val();
-		var t = $("#tel").val();
-		var e = $("#email").val();
+		alert("je");
+	//	var i = $("#ime").val();
+	//	var u = $("#ulica").val();
+	//	var p = $("#posta").val();
+	//	var t = $("#tel").val();
+	/*	var e = $("#email").val();
 		var np = $("#nacinplacila").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: ime, ulica: u, posta: p, tel: t, email: e, nacin: np}, function() { 
 			$('.loading').hide();
-		});
+		});*/
 	}
