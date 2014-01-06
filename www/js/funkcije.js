@@ -72,13 +72,15 @@
 		});
 	}
 	
-	function prijava(st){
+	function prijava(){
+		var st = $("#clanska").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpis.php", {clanska: st}, function() { 
 			$('.loading').hide();
 		});
 	}
 	
-	function pozabljeno(mail){
+	function pozabljeno(){
+		var mail = $("#email").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpis.php", {email: mail}, function() { 
 			$('.loading').hide();
 		});
