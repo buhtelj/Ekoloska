@@ -76,6 +76,7 @@
 		var st = $("#clanska").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpis.php", {clanska: st}, function() { 
 			$('.loading').hide();
+			<%Session["clanska"] = st;%
 		});
 	}
 	
