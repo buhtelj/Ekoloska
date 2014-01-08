@@ -41,8 +41,8 @@
 	}
 
 	
-	function odstrani(id){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/remove.php", {id_izdelka: id}, function() { 
+	function odstrani(id, kol){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/remove.php", {id_izdelka: id, kolicina: kol}, function() { 
 			$('.loading').hide();
 		});
 	}
