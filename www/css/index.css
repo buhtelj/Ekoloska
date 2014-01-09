@@ -60,6 +60,7 @@ a{
 	height: auto;
 	max-height: 253px;
 	background-image: url('../img/footer.png');
+	background-repeat: repeat;
 	bottom: 0;
 	left: 0;
 	margin: auto;
