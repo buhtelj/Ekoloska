@@ -62,6 +62,7 @@ a{
 	background-image: url('../img/footer.png');
 	bottom: 0;
 	left: 0;
+	margin: auto;
 }
 
 #footer_box{
@@ -115,6 +116,10 @@ a{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
 	height:93px;
+}
+
+.gray:hover{
+	background: url('../img/oranzna.png') no-repeat;
 }
 
 
