@@ -69,6 +69,7 @@ a{
 #footer_box{
 	width: 100%;
 	margin: auto;
+	background-color: #484848;
 }
 
 
@@ -81,19 +82,19 @@ a{
 #blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height:93px;
+	height: auto;
 }
 
 #green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height:93px;
+	height: auto;
 	}
 
 #gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height:93px;
+	height: auto;
 }
 
 .orange{
@@ -104,19 +105,19 @@ a{
 .blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height:93px;
+	height:auto;
 }
 
 .green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height:93px;
+	height: auto;
 	}
 
 .gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height:93px;
+	height: auto;
 }
 
 .gray:hover{
@@ -126,7 +127,7 @@ a{
 
 .font_footer{
 	font-family: 'Oswald', sans-serif;
-	font-size: 36px;
+	font-size: 27px;
 	color: #ffffff;
 }
 
