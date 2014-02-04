@@ -17,6 +17,17 @@ a{
 	text-decoration: none;
 }
 
+a:hover{
+	background-color: #E8E8E8;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+
+a:active{
+	background-color: #E8E8E8;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
 /* Portrait layout (default) */
 #header {
 	width: 100%;
