@@ -1,4 +1,3 @@
-
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
@@ -100,6 +99,7 @@ a{
 .orange{
 	width: 100%;
 	background: url('../img/oranzna.png') no-repeat;
+	height: 93px;
 }
 
 .blue{
@@ -117,11 +117,12 @@ a{
 .gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height: auto;
+	height: 93px;
 }
 
 .gray:hover{
 	background: url('../img/oranzna.png') no-repeat;
+	height: 93px;
 }
 
 
@@ -150,7 +151,7 @@ a{
 
 .font_cena{
 	font-family: 'Oswald', sans-serif;
-	font-size: 70px;
+	font-size: 52px;
 	color: #C7D33F;
 }
 
