@@ -81,48 +81,48 @@ a{
 #blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height: 93px;
+	height: 83px;
 }
 
 #green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height: 93px;
+	height: 83px;
 	}
 
 #gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height: 93px;
+	height: 83px;
 }
 
 .orange{
 	width: 100%;
 	background: url('../img/oranzna.png') no-repeat;
-	height: 93px;
+	height: 83px;
 }
 
 .blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height 93px;
+	height: 83px;
 }
 
 .green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height: 93px;
+	height: 83px;
 	}
 
 .gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height: 93px;
+	height: 83px;
 }
 
 .gray:hover{
 	background: url('../img/oranzna.png') no-repeat;
-	height: 93px;
+	height: 83px;
 }
 
 
