@@ -81,19 +81,19 @@ a{
 #blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height: auto;
+	height: 93px;
 }
 
 #green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height: auto;
+	height: 93px;
 	}
 
 #gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height: auto;
+	height: 93px;
 }
 
 .orange{
@@ -105,13 +105,13 @@ a{
 .blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height:auto;
+	height 93px;
 }
 
 .green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height: auto;
+	height: 93px;
 	}
 
 .gray{
