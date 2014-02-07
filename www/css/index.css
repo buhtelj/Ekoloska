@@ -18,12 +18,14 @@ a{
 }
 
 a:hover{
+	color: #C36C3A;
 	background-color: #E8E8E8;
 	opacity:0.4;
 	filter:alpha(opacity=40);
 }
 
 a:active{
+	color: #C36C3A;
 	background-color: #E8E8E8;
 	opacity:0.4;
 	filter:alpha(opacity=40);
