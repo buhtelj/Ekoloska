@@ -160,6 +160,10 @@ a:active{
 	color: #505050;
 } /* naslov ter teza izdelka */
 
+
+.font1:hover{
+	color: #C36C3A;
+}
 .font_cena{
 	font-family: 'Oswald', sans-serif;
 	font-size: 52px;
@@ -200,6 +204,10 @@ a:active{
 	font-family: 'Oswald', sans-serif;
 	font-size: 150%;
 	color: #000000;
+}
+
+.font_opis:hover{
+	color: #C36C3A;
 }
 
 .prijavitese {
