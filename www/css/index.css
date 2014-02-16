@@ -244,6 +244,11 @@ a:active{
 	max-width: 50px;
 }
 
+.razmak{
+		padding-top: 40px;
+	}
+
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -388,6 +393,10 @@ h1 {
 	.gray:hover{
 		background: url('../img/oranzna.png') no-repeat;
 		height: 50px;
+	}
+	
+	.razmak{
+		padding-top: 15px;
 	}
 	
 	}
