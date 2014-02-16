@@ -1,6 +1,5 @@
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 	background-image:url('../img/ozadje.png');
 	background-repeat:repeat;
@@ -82,8 +81,6 @@ a:active{
 	margin: auto;
 	background-color: #484848;
 }
-
-
 
 #orange{
 	width: 100%;
@@ -229,6 +226,23 @@ a:active{
 	width:100%;
 }
 
+.listek{
+	padding-top: 10px;
+	padding-right: 20px;
+	max-height: 80%;
+}
+
+.logo{
+	margin-top: -5px;
+	max-height:75%;
+	max-width: 100%;
+}
+
+.kosarica{
+	padding-bottom: 35px;
+	max-height:50px;
+	max-width: 50px;
+}
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
@@ -284,3 +298,96 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+@media screen and (max-width: 400px){
+
+	#header {
+		width: 100%;
+		height: 42px;
+		background-color: #484848;
+		font-weight: normal;
+		font-size: 14px;
+		margin: auto;
+	}
+	
+	#header_box{
+		max-height: 70px;
+	}
+
+	.listek{
+		padding-top: 5px;
+		padding-right: 20px;
+		max-height: 50%;
+	}
+
+	.logo{
+		margin-top: -3px;
+		width:100%;
+	}
+
+	.kosarica{
+		padding-bottom: 20px;
+		max-height:30px;
+		max-width: 30px;
+	}
+	
+	.font_footer{
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+		color: #ffffff;
+	}
+	
+	#orange{
+		width: 100%;
+		background: url('../img/oranzna.png') no-repeat;
+		height: 50px;
+	}
+
+	#blue{
+		width: 100%;
+		background: url('../img/modra.png') no-repeat;
+		height: 50px;
+	}
+
+	#green{
+		width: 100%;
+		background: url('../img/green.png') no-repeat;
+		height: 50px;
+		}
+
+	#gray{
+		width: 100%;
+		background: url('../img/gray.png') no-repeat;
+		height: 50px;
+	}
+
+	.orange{
+		width: 100%;
+		background: url('../img/oranzna.png') no-repeat;
+		height: 50px;
+	}
+
+	.blue{
+		width: 100%;
+		background: url('../img/modra.png') no-repeat;
+		height: 50px;
+	}
+
+	.green{
+		width: 100%;
+		background: url('../img/green.png') no-repeat;
+		height: 50px;
+		}
+
+	.gray{
+		width: 100%;
+		background: url('../img/gray.png') no-repeat;
+		height: 50px;
+	}
+
+	.gray:hover{
+		background: url('../img/oranzna.png') no-repeat;
+		height: 50px;
+	}
+	
+	}
