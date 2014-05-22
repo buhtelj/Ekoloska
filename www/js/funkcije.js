@@ -15,14 +15,21 @@
 	
 	
 	function zamenjajStran2(id_kat){
-		$.ajax({
-		   type: "POST",
-		   url: "/kategorije.html",
-		   data: id_kat,
-		   success: function() {
-			 alert('success');
-		   }
-		});
+		var url = "kategorije.html";
+		var params = "lorem=ipsum&name=binny";
+		http.open("POST", url, true);
+
+		//Send the proper header information along with the request
+		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		http.setRequestHeader("Content-length", params.length);
+		http.setRequestHeader("Connection", "close");
+
+		http.onreadystatechange = function() {//Call a function when the state changes.
+			if(http.readyState == 4 && http.status == 200) {
+				alert(http.responseText);
+			}
+		}
+		http.send(params);
 	}
 	function izdelki(id_pod){
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/izdelki.php", {id_podkategorije: id_pod}, function() { 
