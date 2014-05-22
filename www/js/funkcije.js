@@ -8,36 +8,26 @@
 	}
 
 	function zamenjajStran(id_kat) { 
-		window.location.assign("izbira.html");
-		
-		xmlhttp.open( "POST", "izbira.html", false );
-		xmlhttp.setRequestHeader(
-			'Content-Type',
-			'application/x-www-form-urlencoded; charset=UTF-8'
-		);
-		xmlhttp.send("id_kategorijes=id_kat")
-		
+	  $("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id_kat}, function() { 
+			$('.loading').hide();
 		});
 	}
 	
-	
 	function zamenjajStran2(id_kat){
-		var url = "kategorije.html";
-		var params = "lorem=ipsum&name=binny";
-		http.open("POST", url, true);
-
-		//Send the proper header information along with the request
-		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		http.setRequestHeader("Content-length", params.length);
-		http.setRequestHeader("Connection", "close");
-
-		http.onreadystatechange = function() {//Call a function when the state changes.
-			if(http.readyState == 4 && http.status == 200) {
-				alert(http.responseText);
-			}
-		}
-		http.send(params);
+		var request = require("request");
+		
+		request({
+		  uri: "http://bplanet.si/web/ekoloska/strani/izbira.php",
+		  method: "POST",
+		  form: {
+			id_kategorije: "Bob"
+		  }
+		}, function(error, response, body) {
+		  console.log(body);
+		});
+		window.location.assign("izbira.html");
 	}
+	
 	function izdelki(id_pod){
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/izdelki.php", {id_podkategorije: id_pod}, function() { 
 			$('.loading').hide();
