@@ -63,9 +63,11 @@
 			<div id="page"></div>
 			<div class="loading"></div>
 		</div>
+		
+		test 
 		<%
 			response.write(request.querystring("id"))
-			%>
+		%>
 		<div id="izdelek"></div>
 		<div class="loading"></div>
 		
