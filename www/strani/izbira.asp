@@ -19,12 +19,6 @@
 				alert("ready");
 			}
 						
-			$(document).ready(function() {
-				$('.loading').show();
-				$("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", function() {
-					$('.loading').hide();
-				});
-			});
 		</script>
     </head>
     <body>
@@ -69,7 +63,9 @@
 			<div id="page"></div>
 			<div class="loading"></div>
 		</div>
-		
+		<%
+			response.write(request.querystring("id"))
+			%>
 		<div id="izdelek"></div>
 		<div class="loading"></div>
 		
