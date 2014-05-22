@@ -10,7 +10,7 @@
 	function zamenjajStran(id_kat) { 
 		window.location.assign("izbira.html");
 		
-		xmlhttp.open( "POST", "http://bplanet.si/web/ekoloska/strani/izbira.php", false );
+		xmlhttp.open( "POST", "izbira.html", false );
 		xmlhttp.setRequestHeader(
 			'Content-Type',
 			'application/x-www-form-urlencoded; charset=UTF-8'
