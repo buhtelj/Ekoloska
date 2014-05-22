@@ -12,6 +12,18 @@
 			$('.loading').hide();
 		});
 	}
+	
+	
+	function zamenjajStran2(id_kat){
+		$.ajax({
+		   type: "POST",
+		   url: "/kategorije.html",
+		   data: id_kat,
+		   success: function() {
+			 alert('success');
+		   }
+		});
+	}
 	function izdelki(id_pod){
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/izdelki.php", {id_podkategorije: id_pod}, function() { 
 			$('.loading').hide();
