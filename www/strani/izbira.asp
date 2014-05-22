@@ -66,7 +66,7 @@
 		
 		test 
 		<%
-			response.write(request.querystring("id"))
+			response.write(Request("id"))
 		%>
 		<div id="izdelek"></div>
 		<div class="loading"></div>

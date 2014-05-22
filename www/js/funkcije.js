@@ -8,6 +8,7 @@
 	}
 
 	function zamenjajStran(id_kat) { 
+		window.location.assign("izbira.html")
 	  $("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id_kat}, function() { 
 			$('.loading').hide();
 		});
