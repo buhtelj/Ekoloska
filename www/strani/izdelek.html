@@ -23,6 +23,7 @@
 			}
 			
 			$(document).ready(function() {
+				alert(getQueryVariable("id") );
 				$("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", {id_kategorije: getQueryVariable("id") }, function() { 
 					$('.loading').hide();
 				});
