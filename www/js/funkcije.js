@@ -15,7 +15,6 @@
 
 	function zamenjajStran(id_kat) { 
 		kategorije = id_kat;
-		alert(kategorije);
 		window.location.assign("izbira.html");
 	}
 	
