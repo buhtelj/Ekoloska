@@ -14,8 +14,10 @@
 	}
 
 	function zamenjajStran(id_kat) { 
+		kategorije = function () {};
 		kategorije = id_kat;
 		window.location.assign("izbira.html");
+		return; 
 	}
 	
 	function zamenjajStran2(id_kat){
