@@ -21,6 +21,12 @@
 			function onDeviceReady() {
 				alert("ready");
 			}
+			
+			$(document).ready(function() {
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: window.id_kategorije}, function() { 
+					$('.loading').hide();
+				});
+			});
 		</script>
     </head>
     <body>
