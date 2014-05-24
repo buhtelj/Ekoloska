@@ -14,8 +14,8 @@
 	}
 
 	function zamenjajStran(id_kat) { 
-		window.kategorije = id_kat;
 		window.location.assign("izbira.html");
+		window.kategorije = id_kat;
 	}
 	
 	function zamenjajStran2(id_kat){
