@@ -1,12 +1,12 @@
 		
 		
-	var window.id_kategorije = 0;
-	var window.id_podkategorije = 0;
-	var window.id_izdelka = 0;
+	var window.id_kategorije;
+	var window.id_podkategorije;
+	var window.id_izdelka;
 	
-	var window.id_kategorijeP = 0;
-	var window.id_podkategorijeP = 0;
-	var window.id_izdelkaP = 0;
+	var window.id_kategorijeP;
+	var window.id_podkategorijeP;
+	var window.id_izdelkaP;
 	
 		
 	function odpriNavigacijo() {
