@@ -1,3 +1,9 @@
+			
+		
+	var window.id_kategorije;
+	var window.id_podkategorije;
+	var window.id_izdelka;
+	
 	
 	function odpriNavigacijo() {
 		document.getElementById('navigacija').style.display = "block";
