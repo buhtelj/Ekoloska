@@ -1,9 +1,14 @@
-			
+				
 		
 	var kategorije = "0";
 	var podkategorije = "0";
 	var izdelka = "0";
 	
+	
+	function zamenjajStran12(id_kat) { 
+		window.location.assign("izbira.html");
+		window.kategorije = id_kat;
+	}
 	
 	function odpriNavigacijo() {
 		document.getElementById('navigacija').style.display = "block";
@@ -14,8 +19,9 @@
 	}
 
 	function zamenjajStran(id_kat) { 
-		window.location.assign("izbira.html");
-		window.kategorije = id_kat;
+	  $("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id_kat}, function() { 
+			$('.loading').hide();
+		});
 	}
 	
 	function zamenjajStran2(id_kat){
@@ -140,9 +146,3 @@
 		});
 	}
 	
-	function writeToFile(idKat){
-			var fso = new ActiveXObject("Scripting.FileSystemObject");
-			var fh = fso.OpenTextFile("idKategorije.txt", 8, true, 0);
-			fh.Write(idKat);
-			fh.Close();
-	}
