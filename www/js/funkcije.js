@@ -19,7 +19,6 @@
 
 	function zamenjajStran(id_kat) { 
 		window.id_kategorije = id_kat;
-		alert(window.id_kategorije);
 		window.location.assign("izbira.html");
 	}
 	
