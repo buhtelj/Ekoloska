@@ -1,14 +1,4 @@
-		
-		
-	var window.id_kategorije;
-	var window.id_podkategorije;
-	var window.id_izdelka;
 	
-	var window.id_kategorijeP;
-	var window.id_podkategorijeP;
-	var window.id_izdelkaP;
-	
-		
 	function odpriNavigacijo() {
 		document.getElementById('navigacija').style.display = "block";
 	}
@@ -18,8 +8,9 @@
 	}
 
 	function zamenjajStran(id_kat) { 
-		window.id_kategorije = id_kat;
-		window.location.assign("izbira.html");
+	  $("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: id_kat}, function() { 
+			$('.loading').hide();
+		});
 	}
 	
 	function zamenjajStran2(id_kat){
