@@ -24,7 +24,7 @@
 			
 			$(document).ready(function() {
 				alert(kategorije);
-				$("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", { id_kategorije: kategorije}, function() { 
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/izbira.php", {id_kategorije: window.kategorije}, function() { 
 					$('.loading').hide();
 				});
 			});

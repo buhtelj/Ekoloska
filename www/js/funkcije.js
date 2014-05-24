@@ -1,8 +1,8 @@
 			
 		
-	var kategorije;
-	var podkategorije;
-	var izdelka;
+	var kategorije = "0";
+	var podkategorije = "0";
+	var izdelka = "0";
 	
 	
 	function odpriNavigacijo() {
@@ -14,10 +14,8 @@
 	}
 
 	function zamenjajStran(id_kat) { 
-		kategorije = function () {};
-		kategorije = id_kat;
+		window.kategorije = id_kat;
 		window.location.assign("izbira.html");
-		return; 
 	}
 	
 	function zamenjajStran2(id_kat){
@@ -142,3 +140,9 @@
 		});
 	}
 	
+	function writeToFile(idKat){
+			var fso = new ActiveXObject("Scripting.FileSystemObject");
+			var fh = fso.OpenTextFile("idKategorije.txt", 8, true, 0);
+			fh.Write(idKat);
+			fh.Close();
+	}
