@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-      <!--  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/> -->
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/> 
         <link rel="stylesheet" type="text/css" href="../css/index.css" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -22,11 +21,10 @@
 						
 			$(document).ready(function() {
 				$('.loading').show();
-				$("#page").load("http://bplanet.si/web/ekoloska/strani/kategorije.php", function() {
+				$("#page").load("http://bplanet.si/web/ekoloska/strani/energijski-pregledi.php", function() {
 					$('.loading').hide();
 				});
 			});
-
 		</script>
     </head>
     <body>
@@ -42,17 +40,18 @@
 								<a href="../index.html"><img class="logo" src="../img/logo.png" alt="logo"  /></a> 
 							</td>
 							<td width="32%" align="center"> 
-								<a href="cart.html"><img  src="../img/cart1.png" class="kosarica" alt="kosarica" /></a>
+								<a href="cart.html"><img src="../img/cart1.png" class="kosarica" alt="kosarica" /></a>
 							</td>
 						</tr>
 				</table>
 			</div>
 		</div>
+
 		<div id="nav">
 			<table width="100%" height="auto">
 				<tr>
 					<td width="32%"> 
-						<a href="vpis.html"><img src="../img/iskanje.png" alt="iskanje artiklov" style="max-width: 100%; height: auto;"/>  </a>
+						<a href="vpis.html"><img src="../img/iskanje.png" alt="iskanje artiklov" style="max-width: 100%; height: auto;"/> </a>
 					</td>
 					<td width="2%"> </td>
 					<td width="32%"> 
@@ -71,9 +70,6 @@
 			<div class="loading"></div>
 		</div>
 		
-		<div id="izdelek"></div>
-		<div class="loading"></div>
-		
 		<div style="padding-top: 50px"> </div>
 		
 		<div id="footer">
@@ -87,7 +83,7 @@
 						</td>
 						<td align="left"> 
 							<a href="splosni_pogoji.html" style="text-decoration: none;">
-								<div class="font_footer"> SPLOŠNI POGOJI POSLOVANJA </div> 
+								<div class="font_footer"> SPLO�NI POGOJI POSLOVANJA </div> 
 							</a>
 						</td>
 						

@@ -1,3 +1,14 @@
+				
+		
+	var kategorije = "0";
+	var podkategorije = "0";
+	var izdelka = "0";
+	
+	
+	function zamenjajStran12(id_kat) { 
+		window.location.assign("izbira.html");
+		window.kategorije = id_kat;
+	}
 	
 	function odpriNavigacijo() {
 		document.getElementById('navigacija').style.display = "block";
@@ -12,6 +23,22 @@
 			$('.loading').hide();
 		});
 	}
+	
+	function zamenjajStran2(id_kat){
+		var request = require("request");
+		
+		request({
+		  uri: "http://bplanet.si/web/ekoloska/strani/izbira.php",
+		  method: "POST",
+		  form: {
+			id_kategorije: "Bob"
+		  }
+		}, function(error, response, body) {
+		  console.log(body);
+		});
+		window.location.assign("izbira.html");
+	}
+	
 	function izdelki(id_pod){
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/izdelki.php", {id_podkategorije: id_pod}, function() { 
 			$('.loading').hide();
@@ -41,8 +68,8 @@
 	}
 
 	
-	function odstrani(id){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/remove.php", {id_izdelka: id}, function() { 
+	function odstrani(id, kol){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/remove.php", {id_izdelka: id, kolicina: kol}, function() { 
 			$('.loading').hide();
 		});
 	}
@@ -59,38 +86,74 @@
 		});
 	}
 		
-	function  naBlagajno(){
+	function naBlagajno(){
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", function() { 
 			$('.loading').hide();
 		});
 	}
 	
-	function popust(k){
+	function popust(){
+		var k = $("#koda_pp").val();
 		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/cart.php", {popustKoda: k}, function() { 
 			$('.loading').hide();
 		});
 	}
 	
-	function prijava(st){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpis.php", {clanska: st}, function() { 
+	function prijava(){
+		var st = $("#clanska").val();
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpisovanje.php", {koda: st}, function() { 
+			$('.loading').hide();
+			Session["clanska"] = st;
+		});
+	}
+	
+	function pozabljeno(){
+		var mail = $("#email").val();
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpisovanje.php", {email: mail}, function() { 
 			$('.loading').hide();
 		});
 	}
 	
-	function pozabljeno(mail){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/vpis.php", {email: mail}, function() { 
+	function podatki(){
+		var st = $("#clanska").val();
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", {clanska: st}, function() { 
 			$('.loading').hide();
 		});
 	}
 	
-	function podatki(st){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/buy.php", {podatki: st}, function() { 
+	function kupi(){
+		var i = $("#ime").val();
+		var u = $("#ulica").val();
+		var p = $("#posta").val();
+		var t = $("#tel").val();
+		var e = $("#email").val();
+		var np = $("#nacinplacila").val();
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: i, ulica: u, posta: p, tel: t, email: e, nacin: np}, function() { 
 			$('.loading').hide();
 		});
 	}
 	
-	function kupi(i, u, t, e, np){
-		$("#page").load("http://bplanet.si/web/ekoloska/strani/cart/kupi.php", {ime: ime, ulica: u, tel: t, email: e, nacin: np}, function() { 
+	function iskanje() {
+		var st = $("#iskanje").val();
+		 $("#page").load("http://bplanet.si/web/ekoloska/strani/artiklov.php", {artikli: st}, function() { 
 			$('.loading').hide();
 		});
+	}
+	
+	function idStrani(url){
+		$("#page").load("http://bplanet.si/web/ekoloska/strani/id.php", {naslov: url}, function() { 
+			$('.loading').hide();
+		});
+	}
+	
+	function getQueryVariable(variable) {
+		var query = window.location.search.substring(1);
+		var vars = query.split("&amp;");
+		for (var i=0; i<vars.length;i++) {
+		  var pair = vars[i].split("=");
+		  if (pair[0] == variable) {
+		  return pair[1];
+		}
+	  }
+	  alert('Query Variable ' + variable + ' not found');
 	}

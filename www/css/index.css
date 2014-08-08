@@ -1,7 +1,5 @@
-
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 	background-image:url('../img/ozadje.png');
 	background-repeat:repeat;
@@ -18,6 +16,17 @@ a{
 	text-decoration: none;
 }
 
+a:hover{
+	background-color: #E8E8E8;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+
+a:active{
+	background-color: #E8E8E8;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
 /* Portrait layout (default) */
 #header {
 	width: 100%;
@@ -60,16 +69,18 @@ a{
 	height: auto;
 	max-height: 253px;
 	background-image: url('../img/footer.png');
+	background-repeat: repeat;
 	bottom: 0;
 	left: 0;
-}
-
-#footer_box{
-	width: 100%;
 	margin: auto;
 }
 
-
+#footer_box{
+	padding-top: 15px;
+	width: 100%;
+	margin: auto;
+	background-color: #484848;
+}
 
 #orange{
 	width: 100%;
@@ -79,48 +90,54 @@ a{
 #blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height:93px;
+	height: 83px;
 }
 
 #green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height:93px;
+	height: 83px;
 	}
 
 #gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height:93px;
+	height: 83px;
 }
 
 .orange{
 	width: 100%;
 	background: url('../img/oranzna.png') no-repeat;
+	height: 83px;
 }
 
 .blue{
 	width: 100%;
 	background: url('../img/modra.png') no-repeat;
-	height:93px;
+	height: 83px;
 }
 
 .green{
 	width: 100%;
 	background: url('../img/green.png') no-repeat;
-	height:93px;
+	height: 83px;
 	}
 
 .gray{
 	width: 100%;
 	background: url('../img/gray.png') no-repeat;
-	height:93px;
+	height: 83px;
+}
+
+.gray:hover{
+	background: url('../img/oranzna.png') no-repeat;
+	height: 83px;
 }
 
 
 .font_footer{
 	font-family: 'Oswald', sans-serif;
-	font-size: 220%;
+	font-size: 30px;
 	color: #ffffff;
 }
 
@@ -141,9 +158,13 @@ a{
 	color: #505050;
 } /* naslov ter teza izdelka */
 
+
+.font1:hover{
+	color: #C36C3A;
+}
 .font_cena{
 	font-family: 'Oswald', sans-serif;
-	font-size: 70px;
+	font-size: 52px;
 	color: #C7D33F;
 }
 
@@ -179,9 +200,10 @@ a{
 
 .font_opis{
 	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
+	font-size: 150%;
 	color: #000000;
 }
+
 
 .prijavitese {
 	width: 252px;
@@ -203,6 +225,34 @@ a{
 	height:1px;
 	width:100%;
 }
+
+.listek{
+	padding-top: 10px;
+	padding-right: 20px;
+	max-height: 80%;
+}
+
+.logo{
+	margin-top: -5px;
+	max-height:75%;
+	max-width: 100%;
+}
+
+.kosarica{
+	padding-bottom: 35px;
+	max-height:50px;
+	max-width: 50px;
+}
+
+.razmak{
+		padding-top: 20px;
+	}
+	
+	.nazaj{
+		padding-bottom: 35px;
+		max-height:50px;
+		padding-right: 20%;
+	}
 
 
 /* Landscape layout (with min-width) */
@@ -258,4 +308,108 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+@media screen and (max-width: 400px){
+
+	#header {
+		width: 100%;
+		height: 42px;
+		background-color: #484848;
+		font-weight: normal;
+		font-size: 14px;
+		margin: auto;
+	}
+	
+	#header_box{
+		max-height: 70px;
+	}
+
+	.listek{
+		padding-top: 5px;
+		padding-right: 20px;
+		max-height: 50%;
+	}
+
+	.logo{
+		margin-top: -3px;
+		width:100%;
+	}
+
+	.kosarica{
+		padding-bottom: 20px;
+		max-height:30px;
+		max-width: 30px;
+	}
+	
+	.font_footer{
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+		color: #ffffff;
+	}
+	
+	#orange{
+		width: 100%;
+		background: url('../img/oranzna.png') no-repeat;
+		height: 50px;
+	}
+
+	#blue{
+		width: 100%;
+		background: url('../img/modra.png') no-repeat;
+		height: 50px;
+	}
+
+	#green{
+		width: 100%;
+		background: url('../img/green.png') no-repeat;
+		height: 50px;
+		}
+
+	#gray{
+		width: 100%;
+		background: url('../img/gray.png') no-repeat;
+		height: 50px;
+	}
+
+	.orange{
+		width: 100%;
+		background: url('../img/oranzna.png') no-repeat;
+		height: 50px;
+	}
+
+	.blue{
+		width: 100%;
+		background: url('../img/modra.png') no-repeat;
+		height: 50px;
+	}
+
+	.green{
+		width: 100%;
+		background: url('../img/green.png') no-repeat;
+		height: 50px;
+		}
+
+	.gray{
+		width: 100%;
+		background: url('../img/gray.png') no-repeat;
+		height: 50px;
+	}
+
+	.gray:hover{
+		background: url('../img/oranzna.png') no-repeat;
+		height: 50px;
+	}
+	
+	.razmak{
+		padding-top: 15px;
+	}
+	
+	.nazaj{
+		padding-bottom: 15px;
+		max-height:30px;
+		padding-right: 20%;
+	}
+
+	
 }
