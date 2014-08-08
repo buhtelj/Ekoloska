@@ -41,6 +41,8 @@
     <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
     <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
     <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-60.png" width="144" />
+    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-60-2x.png" width="144" />
 	
     <icon gap:platform="webos" src="res/icon/webos/icon-64.png" />
 	
@@ -53,12 +55,6 @@
     <gap:splash gap:density="xhdpi" gap:platform="android" src="res/screen/android/screen-xhdpi-portrait.jpg" />
 	
     <gap:splash gap:platform="blackberry" src="res/screen/blackberry/screen-225.png" />
-	
-    <gap:splash gap:platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.jpg" width="320" />
-    <gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.jpg" width="640" />
-    <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.jpg" width="768" />
-    <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.jpg" width="1024" />
-	
 	
 	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-ipad-landscape-2x.png"  width="2048px" />
 	  <gap:splash gap:platform="ios" height="480" src="res/screen ios/screen-ipad-landscape.png"  width="1024px" />
