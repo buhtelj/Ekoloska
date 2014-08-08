@@ -58,15 +58,15 @@
 	
     <gap:splash gap:platform="blackberry" src="res/screen/blackberry/screen-225.png" />
 	
-	<gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-ipad-landscape-2x.jpg"  width="2048" />
-	<gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.jpg"  width="1024" />
-	<gap:splash gap:platform="ios" height="2008" src="res/screen/ios/screen-ipad-portrait-2x.jpg"  width="1536" />
-	<gap:splash gap:platform="ios" height="10224" src="res/screen/ios/screen-ipad-portrait.jpg"  width="768" />
-	<gap:splash gap:platform="ios" height="640" src="res/screen/ios/screen-iphone-landscape-2x.jpg"  width="960" />
-	<gap:splash gap:platform="ios" height="320" src="res/screen/ios/screen-iphone-landscape.jpg"  width="480" />
-	<gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.jpg"  width="640" />
-	<gap:splash gap:platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.jpg"  width="320" />
-	<gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.jpg"  width="640" />
+	<gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-ipad-landscape-2x.png"  width="2048" />
+	<gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png"  width="1024" />
+	<gap:splash gap:platform="ios" height="2008" src="res/screen/ios/screen-ipad-portrait-2x.png"  width="1536" />
+	<gap:splash gap:platform="ios" height="10224" src="res/screen/ios/screen-ipad-portrait.png"  width="768" />
+	<gap:splash gap:platform="ios" height="640" src="res/screen/ios/screen-iphone-landscape-2x.png"  width="960" />
+	<gap:splash gap:platform="ios" height="320" src="res/screen/ios/screen-iphone-landscape.png"  width="480" />
+	<gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png"  width="640" />
+	<gap:splash gap:platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.png"  width="320" />
+	<gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png"  width="640" />
 	
 	
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
