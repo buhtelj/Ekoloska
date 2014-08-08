@@ -41,8 +41,8 @@
     <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
     <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
     <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
-    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-60.png" width="144" />
-    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-60-2x.png" width="144" />
+    <icon gap:platform="ios" height="60" src="res/icon/ios/icon-60.png" width="60" />
+    <icon gap:platform="ios" height="120" src="res/icon/ios/icon-60-2x.png" width="120" />
 	
     <icon gap:platform="webos" src="res/icon/webos/icon-64.png" />
 	
@@ -56,15 +56,15 @@
 	
     <gap:splash gap:platform="blackberry" src="res/screen/blackberry/screen-225.png" />
 	
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-ipad-landscape-2x.png"  width="2048px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screen ios/screen-ipad-landscape.png"  width="1024px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-ipad-portrait-2x.png"  width="1536px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-ipad-portrait.png"  width="768px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-iphone-landscape-2x.png"  width="960px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-iphone-landscape.png"  width="480px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-iphone-portrait-2x.png"  width="640px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-iphone-portrait.png"  width="320px" />
-	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-iphone-portrait-568h-2x.png"  width="640px" />
+	  <gap:splash gap:platform="ios" height="1136" src="res/screenios/screen-ipad-landscape-2x.png"  width="2048" />
+	  <gap:splash gap:platform="ios" height="768" src="res/screen ios/screen-ipad-landscape.png"  width="1024" />
+	  <gap:splash gap:platform="ios" height="2008" src="res/screenios/screen-ipad-portrait-2x.png"  width="1536" />
+	  <gap:splash gap:platform="ios" height="10224" src="res/screenios/screen-ipad-portrait.png"  width="768" />
+	  <gap:splash gap:platform="ios" height="640" src="res/screenios/screen-iphone-landscape-2x.png"  width="960" />
+	  <gap:splash gap:platform="ios" height="320" src="res/screenios/screen-iphone-landscape.png"  width="480" />
+	  <gap:splash gap:platform="ios" height="960" src="res/screenios/screen-iphone-portrait-2x.png"  width="640" />
+	  <gap:splash gap:platform="ios" height="480" src="res/screenios/screen-iphone-portrait.png"  width="320" />
+	  <gap:splash gap:platform="ios" height="1136" src="res/screenios/screen-iphone-portrait-568h-2x.png"  width="640" />
 	
 	
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
