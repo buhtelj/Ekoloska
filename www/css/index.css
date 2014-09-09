@@ -242,17 +242,19 @@ a:active{
 	padding-bottom: 35px;
 	max-height:50px;
 	max-width: 50px;
+	margin-top: -10px;
 }
 
 .razmak{
 		padding-top: 20px;
 	}
 	
-	.nazaj{
-		padding-bottom: 35px;
-		max-height:50px;
-		padding-right: 20%;
-	}
+.nazaj{
+	padding-bottom: 35px;
+	max-height:50px;
+	padding-right: 20%;
+	margin-top: -10px;
+}
 
 
 /* Landscape layout (with min-width) */
